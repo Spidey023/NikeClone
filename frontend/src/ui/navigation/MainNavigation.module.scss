@@ -1,0 +1,38 @@
+.main-nav-container{
+    height: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "logo nav-list sec-3";
+    padding:0 20px;
+   
+    align-items: center;
+
+    .logo{
+        grid-area: logo;
+    }
+    .nav-list{
+        grid-area: nav-list;
+    }
+
+    .nav-sec-3{
+        grid-area: sec-3
+    }
+
+    .nav-list{
+        display: flex;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .nav-sec-3{
+        >ul{
+            display: flex;
+            gap: 10px;
+            justify-content: end;
+        }
+        
+
+    }
+}
