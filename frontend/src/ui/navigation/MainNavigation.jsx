@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import style from "./MainNavigation.module.scss";
 
 function MainNavigation() {
@@ -6,12 +7,48 @@ function MainNavigation() {
       <nav className={style["main-nav-container"]}>
         <div className={style.logo}>logo</div>
         <ul className={style["nav-list"]}>
-          <li>Black Friday</li>
-          <li>New</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>Kids</li>
-          <li>Jorden</li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? style.active : "")}
+            >
+              Black Friday
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? style.active : "")}
+            >
+              New
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? style.active : "")}
+            >
+              Men
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? style.active : "")}
+            >
+              Women
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? style.active : "")}
+            >
+              Kids
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) => (isActive ? style.active : "")}
+            >
+              Jorden
+            </NavLink>
+          </li>
         </ul>
         <div className={style["nav-sec-3"]}>
           <ul>

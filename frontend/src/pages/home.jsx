@@ -1,6 +1,6 @@
 import DashBoard from "../components/dashboard/Dashboard";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <DashBoard />
@@ -8,4 +8,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
