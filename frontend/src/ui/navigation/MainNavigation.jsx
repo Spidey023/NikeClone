@@ -9,44 +9,10 @@ function MainNavigation() {
         <ul className={style["nav-list"]}>
           <li>
             <NavLink
-              className={({ isActive }) => (isActive ? style.active : "")}
-            >
-              Black Friday
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
+              to="new"
               className={({ isActive }) => (isActive ? style.active : "")}
             >
               New
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className={({ isActive }) => (isActive ? style.active : "")}
-            >
-              Men
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className={({ isActive }) => (isActive ? style.active : "")}
-            >
-              Women
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className={({ isActive }) => (isActive ? style.active : "")}
-            >
-              Kids
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className={({ isActive }) => (isActive ? style.active : "")}
-            >
-              Jorden
             </NavLink>
           </li>
         </ul>

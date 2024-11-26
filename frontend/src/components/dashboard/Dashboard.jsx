@@ -2,18 +2,22 @@ import Product from "./product";
 import style from "./Dashboard.module.scss";
 
 import { DUMMY } from "../../data/DummyData";
+import { useState } from "react";
 
 function DashBoard() {
+  const [product, setProduct] = useState(DUMMY);
+  console.log(product);
+
   return (
     <>
       <div className={style["dashboard-container"]}>
-        {DUMMY.map((product) => (
+        {product.map((prod) => (
           <Product
-            key={product.id}
-            id={product.id}
-            name={product.name}
-            category={product.category}
-            price={product.price}
+            key={prod.id}
+            id={prod.id}
+            name={prod.name}
+            category={prod.category}
+            price={prod.price}
           />
         ))}
       </div>

@@ -1,5 +1,9 @@
+import { useParams } from "react-router-dom";
+
 function EditPage() {
-  return;
+  const { prodId } = useParams();
+
+  return <></>;
 }
 
 export default EditPage;
