@@ -5,7 +5,11 @@ function Input(props) {
     <>
       <div className={style["input-container"]}>
         <label htmlFor={props.name}>{props.label}</label>
-        <input type={props.type} name={props.name} />
+        <input
+          type={props.type}
+          name={props.name}
+          defaultValue={props.defaultValue}
+        />
       </div>
     </>
   );
