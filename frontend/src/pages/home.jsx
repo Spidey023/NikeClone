@@ -1,9 +1,8 @@
-import DashBoard from "../components/dashboard/Dashboard";
 
 const HomePage = () => {
   return (
     <>
-      <DashBoard />
+      
     </>
   );
 };

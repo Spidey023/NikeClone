@@ -1,7 +1,16 @@
 import { NavLink } from "react-router-dom";
 import style from "./MainNavigation.module.scss";
+import { useContext } from "react";
+import { LoginContext } from "../../../store/context/LoginContext";
 
 function MainNavigation() {
+  const auth = useContext(LoginContext);
+
+  function handleLogout() {
+    console.log("cli ");
+
+    auth.logout();
+  }
   return (
     <>
       <nav className={style["main-nav-container"]}>
@@ -19,14 +28,15 @@ function MainNavigation() {
         <div className={style["nav-sec-3"]}>
           <ul>
             <li>
-              <span class="material-symbols-outlined">search</span>
+              <span className="material-symbols-outlined">search</span>
             </li>
             <li>
-              <span class="material-symbols-outlined">favorite</span>
+              <span className="material-symbols-outlined">favorite</span>
             </li>
             <li>
-              <span class="material-symbols-outlined">local_mall</span>
+              <span className="material-symbols-outlined">local_mall</span>
             </li>
+            <li onClick={handleLogout}>logout</li>
           </ul>
         </div>
       </nav>
